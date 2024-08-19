@@ -1,3 +1,8 @@
 export default function Page() {
-  return <h1>Meals</h1>;
+  return (
+    <>
+      <header></header>
+      <main></main>
+    </>
+  );
 }
