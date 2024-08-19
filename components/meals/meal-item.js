@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './meals.module.css';
 
 export default function MealItem({ title, slug, image, summary, creator }) {
+  console.log('MEAL ITEM');
   return (
     <article className={styles.meal}>
       <header>
