@@ -25,7 +25,10 @@ export default function Page({ params }) {
         </div>
       </header>
       <main>
-        <p className={styles.instructions}>{meal.instructions}</p>
+        <p
+          className={styles.instructions}
+          dangerouslySetInnerHTML={{ __html: meal.instructions }}
+        />
       </main>
     </>
   );
