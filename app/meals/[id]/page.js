@@ -14,7 +14,11 @@ export default function Page({ params }) {
     <>
       <header className={styles.header}>
         <div className={styles.image}>
-          <Image src={meal.image} fill alt="image" />
+          <Image
+            src={`https://alex-karalanian-next-level-food-images.s3.amazonaws.com/${meal.image}`}
+            fill
+            alt="image"
+          />
         </div>
         <div className={styles.headerText}>
           <h1>{meal.title}</h1>

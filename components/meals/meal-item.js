@@ -7,7 +7,11 @@ export default function MealItem({ title, slug, image, summary, creator }) {
     <article className={styles.meal}>
       <header>
         <div className={styles.image}>
-          <Image src={image} alt={title} fill />
+          <Image
+            src={`https://alex-karalanian-next-level-food-images.s3.amazonaws.com/${image}`}
+            alt={title}
+            fill
+          />
         </div>
         <div className={styles.headerText}>
           <h2>{title}</h2>
